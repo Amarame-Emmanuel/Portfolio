@@ -1,0 +1,90 @@
+.projects-section {
+  position: relative;
+  z-index: 1;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: var(--bg-card-hover);
+  border-color: rgba(139, 92, 246, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.project-folder {
+  color: var(--primary);
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.project-links a:hover {
+  color: var(--secondary);
+  transform: scale(1.1);
+}
+
+.project-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-title a {
+  color: var(--text-main);
+}
+
+.project-title a:hover {
+  color: var(--primary);
+}
+
+.project-description {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
+.project-tech-item {
+  font-size: 0.8rem;
+  font-family: 'Consolas', 'Monaco', monospace;
+  color: var(--secondary);
+  background: rgba(139, 92, 246, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}

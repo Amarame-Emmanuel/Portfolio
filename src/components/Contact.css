@@ -1,0 +1,72 @@
+.contact-section {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0;
+}
+
+.contact-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contact-desc {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.contact-btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.mt-4 {
+  margin-top: 3rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-icon {
+  color: var(--text-muted);
+  padding: 0.8rem;
+  background: rgba(20, 20, 20, 0.5);
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+}
+
+.footer {
+  margin-top: 5rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
